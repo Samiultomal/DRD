@@ -22,3 +22,12 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+
+
+class APIPerformanceLog(models.Model):
+    url = models.CharField(max_length=255)
+    duration = models.FloatField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.url} - {self.duration} sec"
