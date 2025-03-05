@@ -1,0 +1,8 @@
+# Ignore environment files
+env/
+
+# Ignore project directory and docker command files
+project_directory.txt
+docker_command.txt
+
+backend/backend/settings.py
