@@ -1,3 +1,6 @@
+# Ignore SQLite database in the backend folder
+backend/db.sqlite3
+
 # Ignore environment files
 env/
 
@@ -5,4 +8,5 @@ env/
 project_directory.txt
 docker_command.txt
 
+# Ignore settings.py in the backend folder
 backend/backend/settings.py
